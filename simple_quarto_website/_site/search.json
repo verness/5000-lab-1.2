@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html#system-pipeline",
+    "href": "index.html#system-pipeline",
+    "title": "simple_quarto_website",
+    "section": "System Pipeline",
+    "text": "System Pipeline\n\n\n\n\n\nflowchart LR\n  A[Input x] --&gt; B{Model Choice}\n  B --&gt;|Linear| C[Train GLM]\n  B --&gt;|Tree| D[Train RF]\n  B --&gt;|Deep| E[Train NN]\n  C --&gt; F[Evaluate]\n  D --&gt; F\n  E --&gt; F\n  F --&gt; G{Meets Metric?}\n  G --&gt;|Yes| H[Deploy]\n  G --&gt;|No| B\n\n\n\n\n\n\n\nCommon models\n\nLinear regression\n\nTree-based models\n\nNeural networks"
+  },
+  {
+    "objectID": "index.html#algorithm-comparison-table",
+    "href": "index.html#algorithm-comparison-table",
+    "title": "simple_quarto_website",
+    "section": "Algorithm Comparison Table",
+    "text": "Algorithm Comparison Table\n\n\n\n\n\n\n\n\nModel\nStrengths\nWeakness\n\n\n\n\nRandomForest\nScaling of data not required, unlikely to overfit\nRequires more memory\n\n\nXGBoost\nSupports missing values and sparse features\nMore complex tuning needed\n\n\nLightGBM\nSmall model size, faster in training\nMay perform poorly on small data\n\n\n\n\nRandom Forest Equation\n\\[\n\\hat{y} = \\frac{1}{T} \\sum_{t=1}^{T} h_t(x)\n\\]\nthe linear model is \\(y = mx + \\varepsilon\\).\n\n\nReference\n(Ajit, Acharya, and Samanta 2020)\n(He et al. 2016)\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "simple_quarto_website",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nHyperparameters are configuration values (like tree depth or learning rate) set before training, not learned from the data.↩︎"
+  },
+  {
+    "objectID": "slides/slides.html#overview",
+    "href": "slides/slides.html#overview",
+    "title": "Component 6",
+    "section": "Overview",
+    "text": "Overview\n“Advances in deep convolutional networks have driven major gains in image classification (He et al. 2016).”\n\nOverview\nTwo images\nA visible plot"
+  },
+  {
+    "objectID": "slides/slides.html#visuals",
+    "href": "slides/slides.html#visuals",
+    "title": "Component 6",
+    "section": "Visuals",
+    "text": "Visuals\n\n\nData Science Life Cycle\n\n\nFuture of Data Science"
+  },
+  {
+    "objectID": "slides/slides.html#reference",
+    "href": "slides/slides.html#reference",
+    "title": "Component 6",
+    "section": "Reference",
+    "text": "Reference\n\n\n\n\nHe, Kaiming, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2016. “Deep Residual Learning for Image Recognition.” In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 770–78."
+  }
+]

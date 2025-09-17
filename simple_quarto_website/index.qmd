@@ -1,0 +1,127 @@
+---
+title: "simple_quarto_website"
+---
+
+## This is a Quarto website.
+
+
+
+# Welcome
+![Machine Learning](images/VC_Deep_Learning_Hero_3200x1800.webp)
+
+### Introduction
+
+What is Convolutional Network?
+“A convolutional layer moves a small kernel across the image grid, taking element-wise products and sums to generate a feature (activation) map [@ajit2020review]."
+
+“Convolution applies a learnable kernel to local neighborhoods of the image, producing an activation map that encodes relevant features.” [@ajit2020review]."
+
+
+---
+
+
+### Key Concepts
+
+Here are some key points in a bulleted list:
+
+- Supervised learning uses labeled data $(x, y)$.
+- Unsupervised learning discovers hidden patterns in unlabeled data.
+- Optimization improves model parameters.
+- Reinforce learning uses reward and penalties in agents to interact with environment.
+
+---
+
+> "Our ultimate objective is to make programs that learn from their experience as effectively as humans do."
+> - John McCarthy
+
+---
+
+## System Pipeline
+  ```{mermaid}
+flowchart LR
+  A[Input x] --> B{Model Choice}
+  B -->|Linear| C[Train GLM]
+  B -->|Tree| D[Train RF]
+  B -->|Deep| E[Train NN]
+  C --> F[Evaluate]
+  D --> F
+  E --> F
+  F --> G{Meets Metric?}
+  G -->|Yes| H[Deploy]
+  G -->|No| B
+  ```
+
+### Common models
+
+- Linear regression  
+- Tree-based models  
+- Neural networks  
+
+---
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+  <iframe src="https://www.youtube.com/embed/aircAruvnKk" 
+          title="But what is a neural network? | Deep learning chapter 1" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen 
+          style="position:absolute;top:0;left:0;width:100%;height:100%;">
+  </iframe>
+</div>
+
+---
+
+# Two-Column Section (H1)
+
+::: {.columns}
+::: {.column}
+### Common Models
+
+- Linear regression  
+- Tree-based models  
+- Neural networks  
+
+:::
+
+::: {.column}
+### Workflow Stages (H3)
+
+1. Data preprocessing  
+2. Feature engineering  
+3. Model training
+4. Hyperparameter tunning[^1]  
+5. Evaluation 
+
+[^1]: Hyperparameters are configuration values (like tree depth or learning rate) set before training, not learned from the data.
+:::
+:::
+
+---
+
+![Steps for machine learning](images/steps-machine-learning-1.png)
+
+## Algorithm Comparison Table
+
+| Model        | Strengths                                   | Weakness                  |
+|--------------|---------------------------------------------|----------------------------|
+| RandomForest | Scaling of data not required, unlikely to overfit | Requires more memory       |
+| XGBoost      | Supports missing values and sparse features | More complex tuning needed |
+| LightGBM     | Small model size, faster in training        | May perform poorly on small data |
+
+#### Random Forest Equation
+$$
+\hat{y} = \frac{1}{T} \sum_{t=1}^{T} h_t(x)
+$$
+
+
+the linear model is $y = mx + \varepsilon$.
+
+
+### Reference
+
+[@ajit2020review]
+
+[@he2016deep]
+
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
